@@ -8,10 +8,11 @@ The main idea behind pseudo labels is to take full advantage of a pre-trained te
 
 ## Results on the Two Moons dataset
 
-Ground Truth            |  Supervised                               |Meta
+Ground Truth            |  Supervised                               |Meta Pseudo Labels
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="imgs/ground_truth.png" alt="drawing" width="150"/>  |  <img src="imgs/ground_truth.png" alt="drawing" width="152"/> | 
-<img src="imgs/ground_truth.png" alt="drawing" width="152"/>
+<img src="imgs/ground_truth.png" alt="drawing" width="250"/>  |  <img src="imgs/supervised.png" alt="drawing" width="252"/> | <img src="imgs/meta_pseudo_method.png" alt="drawing" width="252"/>
+
+In the supervised learning scenario, a model is given 12 labeled data, 6 from each cluster, and asked to classify all the remaining data points. In the plot above, a model trained via supervised learning learns a simple linear decision boundary that even misclassifies one labeled data point. However, by leveraging meta pseudo labels, it is possible to train a network that is capable of generating nonlinear decision boundaries given the same amount of labeled data. 
 
       
 
