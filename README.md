@@ -6,9 +6,23 @@
 The main idea behind pseudo labels is to take full advantage of a pre-trained teacher network to teach a student network under lack of labeled data. A teacher network generates the so-called "pseudo labels" from large amounts of unlabeled data which a student network then learns from in a supervised manner. An issue with this approach, however, is that a teacher network is bound to make few mistakes along the way by incorrectly labeling data and thus resulting in the student learning the mistakes as well. Meta pseudo labels [1] tackles this challenge by updating the teacher based on the student's performance on labeled data. A student performing poorly on labeled data can serve as a signal for the teacher to improve and generate better labels.
 
 
-### Results on the Two Moons dataset
+## Results on the Two Moons dataset
 
-![Ground Truth](imgs/ground_truth.png) ![Supervised Learning](imgs/supervised.png) ![Meta Pseudo Labels](imgs/meta_pseudo_method.png)             
+<figure>
+  <img src="imgs/ground_truth.png" width=200 alt="Ground Truth">
+  <figcaption align="center">Ground Truth</figcaption>
+</figure>
+
+
+<figure>
+  <img src="imgs/supervised.png" width=200 alt="Ground Truth">
+  <figcaption align="center">Supervised</figcaption>
+</figure>
+
+<figure>
+  <img src="imgs/meta_pseudo_method.png" width=200 alt="Ground Truth">
+  <figcaption align="center">Meta Pseudo Labels</figcaption>
+</figure>            
 
 ### TODOs
 * More experimental results using larger datasets and models
