@@ -8,21 +8,12 @@ The main idea behind pseudo labels is to take full advantage of a pre-trained te
 
 ## Results on the Two Moons dataset
 
-<figure>
-  <img src="imgs/ground_truth.png" width=200 alt="Ground Truth">
-  <figcaption align="center">Ground Truth</figcaption>
-</figure>
+Ground Truth            |  Supervised                               |Meta
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="imgs/ground_truth.png" alt="drawing" width="150"/>  |  <img src="imgs/ground_truth.png" alt="drawing" width="152"/> | 
+<img src="imgs/ground_truth.png" alt="drawing" width="152"/>
 
-
-<figure>
-  <img src="imgs/supervised.png" width=200 alt="Ground Truth">
-  <figcaption align="center">Supervised</figcaption>
-</figure>
-
-<figure>
-  <img src="imgs/meta_pseudo_method.png" width=200 alt="Ground Truth">
-  <figcaption align="center">Meta Pseudo Labels</figcaption>
-</figure>            
+      
 
 ### TODOs
 * More experimental results using larger datasets and models
